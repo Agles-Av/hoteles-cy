@@ -36,13 +36,13 @@ class login{
     }
 
     agregarHuesped(){
-        for (let i = 65; i < 67; i++) {
-            for (let j = 65; j < 89; j++) {
-                cy.get('#__BVID__333').type('Christian'+ String.fromCharCode(i))
-                cy.get('#__BVID__335').type('Campos' +String.fromCharCode(j))
-                cy.get('#__BVID__337').type('Salgado' + String.fromCharCode(i) + String.fromCharCode(j)) 
-                cy.get('#__BVID__339').type('23' + j)
-                cy.get('#__BVID__341').type('12345678' + j)   
+        for (let i = 65; i < 69; i++) {
+            for (let j = 65; j < 90; j++) {
+                cy.get('#__BVID__333').type('Christian'+ String.fromCharCode(i),{ delay: 100 })
+                cy.get('#__BVID__335').type('Campos' +String.fromCharCode(j),{ delay: 100 })
+                cy.get('#__BVID__337').type('Salgado' + String.fromCharCode(i) + String.fromCharCode(j),{ delay: 100 }) 
+                cy.get('#__BVID__339').type('23' + j,{ delay: 100 })
+                cy.get('#__BVID__341').type('12345678' + j,{ delay: 100 }).wait(1000)   
                 cy.get(':nth-child(1) > .text-right > .btn').click();
                 cy.wait(1000);
                 cy.get('.swal2-confirm').click();

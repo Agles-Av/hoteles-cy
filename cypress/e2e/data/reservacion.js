@@ -19,5 +19,5 @@ Seleccion_si_es_menor_de_edad_el_Huesped_adicional : "",
 }
 
 export const SINESPECIFICAR_ESERVACION = {
-    fecha_reservacion: "2024-09-04",
+    fecha_reservacion: "2024-08-30",
 }
