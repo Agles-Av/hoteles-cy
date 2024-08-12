@@ -36,8 +36,8 @@ class login{
     }
 
     agregarHuesped(){
-        for (let i = 65; i < 66; i++) {
-            for (let j = 65; j < 85; j++) {
+        for (let i = 65; i < 67; i++) {
+            for (let j = 65; j < 89; j++) {
                 cy.get('#__BVID__333').type('Christian'+ String.fromCharCode(i))
                 cy.get('#__BVID__335').type('Campos' +String.fromCharCode(j))
                 cy.get('#__BVID__337').type('Salgado' + String.fromCharCode(i) + String.fromCharCode(j)) 
