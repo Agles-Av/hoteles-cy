@@ -4,16 +4,16 @@
 class login{
     constructor(){
         this.url = 'http://192.168.20.130:12091/#/login';
-        this.inputCorreo = '#__BVID__16';
-        this.inputContrasena = '#__BVID__18';
+        this.inputCorreo = '#__BVID__13';
+        this.inputContrasena = '#__BVID__15';
         this.btnIniciarSesion = '.btn';
     }
 
     //Funciones
     iniciarSesion(correo, contrasena){
         cy.wait(1000);
-        cy.get(this.inputCorreo).clear().type(correo);
-        cy.get(this.inputContrasena).clear().type(contrasena);
+        cy.get(this.inputCorreo).type(correo);
+        cy.get(this.inputContrasena).type(contrasena);
         cy.get(this.btnIniciarSesion).click().wait(3000);
     }
 
